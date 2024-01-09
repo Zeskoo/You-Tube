@@ -9,24 +9,22 @@
 nav {
   width: 100%;
   padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 200;
   
-  
- 
- 
+
 }
-.cabeza{
-    position: fixed;
-    left: 7px;
-    top: 8px;
-    width: 100%;
-    background-color: white;
-}
+
 
 
 nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .svg {
@@ -109,23 +107,24 @@ nav ul {
 }
 
 aside {
-    float:left;
+    
     background-color: white;
-    width: 70px;
     padding: 2px;
     padding-top: 12px;
     margin-top: 30px;
-    position: fixed;
+    position: sticky;
     align-items: center;
     text-align: center;
+    top: 65px;
     
     
   }
 
   main{
-    margin-left: 75px;
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 6% 94%;
   }
+
 .size{
     height: 24px;
     width: 24px;
@@ -140,20 +139,19 @@ aside {
 }
 
 .contenido{
-    width: calc(100vw - 240px);
+   
+    position: sticky;
+    top: 65px;
+    z-index: 200;
     
 }
 
-.bajar{
-    margin-left: 18px;
-    
-   
-}
 
 .selectores{
     display: flex;
     position: sticky;
     background-color: white;
+    z-index: 200;
     
 }
 
